@@ -1,0 +1,150 @@
+/* Nvabar settings */
+/* navbar */  
+.navbar{
+    display: flex;
+    background: transparent; 
+    top: 0;  
+    margin: 2% 0;
+}
+
+.logo > img {
+    height: 10vh;
+    width: 10vh;
+}
+a{
+    color: whitesmoke;
+    cursor: pointer;
+}
+span {
+    color: red;
+    font-size: 3rem;
+    padding: 0 2%;
+}
+/* ul {
+position: absolute;
+display: flex;
+left: 65%;
+} */
+  ul {
+    display: flex;
+    gap: 1.5 rem;
+    left: 65%;
+
+ }
+.nav-item {
+    font-size: 20px;
+    padding: 1% 2%;
+    position: relative;
+}
+.nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    z-index: 1;
+}
+.nav-item:hover::before {
+    animation: fill 1s forwards;
+}
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+        height: 2px;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background: orangered;
+    }
+}
+
+/* container and sections*/
+.secone {
+    display: flex;
+    /* padding: 20%; */
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    overflow-x: hidden;
+    margin: -7% 0;
+}
+div {
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding: 2% 0;
+    text-shadow: rgb(142, 43, 43) 50px 0 0 0;
+}
+p {
+    font-size:2rem;
+    color: rgb(0, 103, 96);
+    font-weight: 600;
+}
+section .animate {
+    transition: 01.5s ease-in;
+}
+
+.secone .animate {
+    transform: translateX(-180%);
+}
+.secone.show-animate .animate {
+    transform: translateX(0);
+}
+
+.sectwo .animate {
+        transform: translateX(180%);
+}
+.sectwo.show-animate .animate {
+    transform: translateX(0);
+}
+
+.secthree .animate {
+    transform: scale(.7);
+}
+.secthree.show-animate .animate {
+    transform: scale(1);
+}
+.secfive .animate {
+    transform: scale(.7);
+}
+.secfive.show-animate .animate {
+    transform: scale(1);
+}
+.secfive .flow-in {
+    transform: translateX(-180%);
+}
+.secfive.show-animate .flow-in {
+    transform: translateX(0);
+}
+
+.sectwo p {
+    color: #0f0;
+}
+.secthree p {
+    color: #e0f;
+}
+.secfour p {
+    color: #ff0;
+}
+.secfive .flow-in img {
+    margin: 20px;
+    max-width: 400px;
+    transform: translateX(-100%);
+    transition-delay: calc(.3s * var(--i));
+}
+.secfive.show-animate .flow-in img {
+    transform: translateX(0);
+}
+.counter-section {
+    margin: 100vh 0; /* Add space before the section to scroll down */
+    text-align: center;
+    font-size: 1rem;
+}

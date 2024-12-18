@@ -1,0 +1,48 @@
+@media only screen and (max-width: 700px) and (min-width: 100px) {
+   
+    .hero-section {
+        height: 60vh;
+    }
+
+    .project-section,
+    .sector-section,
+    .contact-section{
+    padding: 3% 7%;
+    }
+
+    .project-header {
+        padding: 5%;
+    }
+/*  */
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    p {
+    font-size: 1.5rem;
+    }
+
+    .project-header > h3,
+    .contact-section  > h3 {
+        font-size: medium;
+    }
+}
+
+/* Tablet screen media */
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+        .message-us {
+        text-align: right;
+        padding: 1% 7%;
+        border: 2px solid black;
+        width: 100%;
+        }
+        .logo > img {
+            width: 80px;
+            height: 80px;
+        }
+        .button-container {
+            top: 85%;
+            right: 100px;
+        }
+}
+

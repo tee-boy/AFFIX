@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+    font-family: poppins, sans-serif;
+    color: black;
+}
+/*  */
+/* // Hero section */
+.hero-section, 
+.project-section
+.sector-section {
+    padding: 1% 5%;
+    background: url('presentation wallaper.jpg');
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project-section,
+.sector-section,
+.contact-section{
+    background: url('121611.jpg');  
+    text-align: center;
+    padding: 3% 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project-section > h1,
+.sector-section > h1,
+.contact-section > h1 {
+    scroll-behavior: smooth;
+    color: black;
+    text-align: center;
+    margin: 1% 0;
+}
+h4 {
+    letter-spacing: 5px;
+    margin: 3% 0 0 0;
+}
+
+.project-header {
+    padding: 3% 19%;
+}
+
+.project-header > h3,
+.contact-section  > h3 {
+    margin: -4% 0;
+    font-weight: 500;
+}
+
+.photoframe-container,
+.sector-container {
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;     
+}
+.photo-frame {
+    padding:6% 2%;
+    border-radius: 20px 0 20px 0;
+    border: 2px solid rgb(194, 2, 120);
+    margin: 2%;
+}
+.photo-frame > img {
+width: 100%;
+transform: scale(1);   
+}
+.photo-frame > img:hover {  
+transition: 5s ease-in-out; 
+}
+.photo-frame > button,
+.message-us > button {
+padding: 1.5% 2.5%;
+background-color: rgb(0, 103, 96);
+border: none;
+border-radius: 4px;
+font-weight: 600;
+cursor: pointer;
+width: fit-content;
+height: fit-content;
+}
+.sectwo > h1 {
+    color: black;
+}
+
+/* SEctor Section */
+
+.sector-card {
+ border-radius: 10px;   
+ border: 2px solid rgb(194, 2, 120);
+ padding: 5%;
+ text-align: center;
+}
+
+.sector-card > h4 {
+    text-align: center;
+} 
+
+.sector-container > h3 {
+    margin: 2% 0;
+}
+.sector-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.sector-card > ion-icon {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: rgb(0, 103, 96);
+}
+.sector-card > h6 {
+    font-weight: 400;
+}
+/* // Contact - section */
+.contact-container {
+ padding: 6% 0;
+}
+.socials{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+}
+.socials {
+    padding: 1% 4%;
+    backdrop-filter: blur;
+}
+.socials > div {
+    text-align: center;
+    margin: 1%;
+    padding: 3%;
+    width: 200px;
+    border-radius: 10px;   
+    background: transparent;
+    border: 2px solid rgb(194, 2, 120);
+}
+.social-link {
+    color: rgb(0, 103, 96);
+}
+.message-us {
+ text-align: center;
+padding: 20% 0%;
+}
+input,
+textarea {
+    background-color: transparent;
+    width: 50%;
+    height: 6vh;
+    padding: 2%;
+    margin: 1% 0;
+    outline: 0;
+    border: 2px solid rgb(194, 2, 120);
+    border-radius: 10px 0 10px 0;
+}
+#message {
+    height: 20vh;
+}
+footer {
+    background-color: black;
+    /* padding: ; */
+}
